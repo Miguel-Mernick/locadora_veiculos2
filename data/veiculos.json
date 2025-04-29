@@ -1,0 +1,57 @@
+[
+    {
+        "tipo": "Moto",
+        "modelo": "Xj6",
+        "placa": "ccc7c94",
+        "disponivel": false
+    },
+
+    {
+        "tipo": "Moto",
+        "modelo": "125 Original",
+        "placa": "ccc7c94",
+        "disponivel": true
+    },
+    {
+        "tipo": "Carro",
+        "modelo": "Fusca",
+        "placa": "AAA7A77",
+        "disponivel": true
+    },
+    {
+        "tipo": "Carro",
+        "modelo": "Civic",
+        "placa": "BBB5B55",
+        "disponivel": true
+    },
+    {
+        "tipo": "Carro",
+        "modelo": "Palio",
+        "placa": "DDD3D37",
+        "disponivel": true
+    },
+    {
+        "tipo": "Carro",
+        "modelo": "Ferrari",
+        "placa": "AAA7A77",
+        "disponivel": false
+    },
+    {
+        "tipo": "Moto",
+        "modelo": "Harley Davidson",
+        "placa": "CCC7C25",
+        "disponivel": true
+    },
+    {
+        "tipo": "Carro",
+        "modelo": "lamborghini",
+        "placa": "BBB5B55",
+        "disponivel": true
+    },
+    {
+        "tipo": "Moto",
+        "modelo": "Yamaha YZF R-3",
+        "placa": "DDD3D37",
+        "disponivel": false
+    }
+]
