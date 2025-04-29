@@ -48,9 +48,57 @@
                     // cria o diretório se não existir
                     mkdir($dir, 0777, true);
                 }
-                // salva o array de veículos no arquivo JSON
-                file_put_contents(ARQUIVO_JSON, json_encode($dados, JSON_PRETTY_PRINT));
+
             }
+            // salva o array de veículos no arquivo JSON
+            file_put_contents(ARQUIVO_JSON, json_encode($dados, JSON_PRETTY_PRINT));
         }
+            public function adicionarVeiculo(Veiculo $veiculo): void {
+                $this->veiculos[] = $veiculo;
+                $this->salvarVeiculos();
+            }
+            //remover veiculo
+            public function removerVeiculo(string $placa): void {
+                foreach ($this->veiculos as $key => $veiculo) {
+                    if ($veiculo->getPlaca() === $placa) {
+                        unset($this->veiculos[$key]);
+                        $this->salvarVeiculos();
+                        return;
+                    }
+                }
+            }
+
+            //alugar veiculo
+            public function alugarVeiculo(string $placa): string {
+                foreach ($this->veiculos as $veiculo) {
+                    if ($veiculo->getPlaca() === $placa) {
+                        return $veiculo->alugar();
+                    }
+                }
+                return "Veículo não encontrado.";
+            }
+
+            //devolver veiculo
+            public function devolverVeiculo(string $placa): string {
+                foreach ($this->veiculos as $veiculo) {
+                    if ($veiculo->getPlaca() === $placa) {
+                        return $veiculo->devolver();
+                    }
+                }
+                return "Veículo não encontrado.";
+            }
+            //retornar veiculos
+            public function getVeiculos(): array {
+                return $this->veiculos;
+            }
+            //calcular aluguel
+            public function calcularAluguel(string $placa, int $dias): float {
+                foreach ($this->veiculos as $veiculo) {
+                    if ($veiculo->getPlaca() === $placa) {
+                        return $veiculo->calcularAluguel($dias);
+                    }
+                }
+                return 0.0;
+            }
     }
 ?>
