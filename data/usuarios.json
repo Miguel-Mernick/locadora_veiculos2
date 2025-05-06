@@ -1,0 +1,17 @@
+[
+    {
+        "username": "admin",
+        "password": "$2y$12$XPVcjL8dutkL/bCofpAcO.g9ZZu5Vu5Y3Ns74bjvG9jSdJUTb/HkO",
+        "perfil": "admin"
+    },
+    {
+        "username": "usuario",
+        "password": "$2y$12$0GvOU\/pHiOFzUvceoUDrD.Ltklzpivkdj4tee8iPC8y8jtAAxVDR6",
+        "perfil": "usuario"
+    },
+    {
+        "username": "Miguel",
+        "password": "$2y$12$SiE3dGcE6AWPChc6XP4WyO6hV7fnL3n5ePYjcQMSw65f8he8uHu\/O",
+        "perfil": "admin"
+    }
+]
