@@ -70,7 +70,7 @@
         elseif(isset($_POST['calcular'])){
             $dias = (int)$_POST['dias_calculo'];
             $tipo = $_POST['tipo_calculo'];
-            $valor = $locadora->calcularAluguel($dias, $tipo);
+            $valor = $locadora->calcularPrevisaoAluguel($dias, $tipo);
 
             $mensagem = "Previsão de valor para {$dias} dias: R$ " . number_format($valor, 2, ',','.');
         }

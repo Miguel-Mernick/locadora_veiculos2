@@ -5,7 +5,6 @@
         "placa": "ccc7c94",
         "disponivel": false
     },
-
     {
         "tipo": "Moto",
         "modelo": "125 Original",
@@ -34,7 +33,7 @@
         "tipo": "Carro",
         "modelo": "Ferrari",
         "placa": "AAA7A77",
-        "disponivel": false
+        "disponivel": true
     },
     {
         "tipo": "Moto",
@@ -52,6 +51,6 @@
         "tipo": "Moto",
         "modelo": "Yamaha YZF R-3",
         "placa": "DDD3D37",
-        "disponivel": false
+        "disponivel": true
     }
 ]
