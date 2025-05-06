@@ -9,6 +9,7 @@ class Carro extends Veiculo implements Locavel {
     public function calcularAluguel(int $dias): float {
         return $dias * DIARIA_CARRO;
 
+
     }
 
     public function alugar(): string{
